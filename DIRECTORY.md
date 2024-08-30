@@ -15,7 +15,7 @@
   * [Wildcard Matching](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/backtracking/wildcard_matching.cpp)
 
 ## Bit Manipulation
-  * [Count Bits Flip](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_bits_flip.cpp)
+  * [✅ Count Bits Flip](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_bits_flip.cpp)
   * [Count Of Set Bits](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_set_bits.cpp)
   * [Count Of Trailing Ciphers In Factorial N](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/count_of_trailing_ciphers_in_factorial_n.cpp)
   * [Find Non Repeating Number](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/bit_manipulation/find_non_repeating_number.cpp)
@@ -138,9 +138,9 @@
   * [Connected Components](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/connected_components.cpp)
   * [Connected Components With Dsu](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/connected_components_with_dsu.cpp)
   * [Cycle Check Directed Graph](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/cycle_check_directed_graph.cpp)
-  * [Depth First Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/depth_first_search.cpp)
-  * [Depth First Search With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/depth_first_search_with_stack.cpp)
-  * [Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/dijkstra.cpp)
+  * [✅ Depth First Search](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/depth_first_search.cpp)
+  * [✅ Depth First Search With Stack](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/depth_first_search_with_stack.cpp)
+  * [✅ Dijkstra](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/dijkstra.cpp)
   * [Hamiltons Cycle](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/hamiltons_cycle.cpp)
   * [Hopcroft Karp](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/hopcroft_karp.cpp)
   * [Is Graph Bipartite](https://github.com/TheAlgorithms/C-Plus-Plus/blob/HEAD/graph/is_graph_bipartite.cpp)

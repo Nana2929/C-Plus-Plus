@@ -13,7 +13,7 @@
  *
  * A  = 01010 B  = 10100
  * As we can see, the bits of A that need to be flipped are 01010.
- * If we flipthese bits, we get 10100, which is B.
+ * If we flip these bits, we get 10100, which is B.
  *
  * Worst Case Time Complexity: O(log n)
  * Space complexity: O(1)
@@ -43,13 +43,21 @@ std::uint64_t countBitsFlip(
     std::int64_t A,
     std::int64_t B) {  // int64_t is preferred over int so that
                        // no Overflow can be there.
+    // A: 01010
+    // B: 10100
+
 
     int count =
         0;  // "count" variable is used to count number of bits flip of the
             // number A to form B in binary representation of number 'n'
     A = A ^ B;
+    // A ^ B = 11110; the set bits in A ^ B are the bits that need to be flipped
     while (A) {
-        A = A & (A - 1);
+        A = A & (A - 1); // clear the least significant bit set
+        //  !!記得，這招很常見!!This operation clears the least significant 1 bit in A. The
+        //  expression (A - 1) flips all the bits up to and including the first
+        //  1 bit from the right (least significant bit), and the bitwise AND
+        //  operation with A clears this flipped bit.
         count++;
     }
     return count;

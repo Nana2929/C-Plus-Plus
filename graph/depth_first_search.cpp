@@ -77,13 +77,13 @@ void addEdge(std::vector<std::vector<size_t>> *adj, size_t u, size_t v) {
  * @param visited already visited vertices
  *
  */
-void explore(const std::vector<std::vector<size_t>> &adj, size_t v,
+void dfs(const std::vector<std::vector<size_t>> &adj, size_t v,
              std::vector<bool> *visited) {
     std::cout << v + 1 << " ";
     (*visited)[v] = true;
     for (auto x : adj[v]) {
         if (!(*visited)[x]) {
-            explore(adj, x, visited);
+            dfs(adj, x, visited);
         }
     }
 }
@@ -101,29 +101,37 @@ void depth_first_search(const std::vector<std::vector<size_t>> &adj,
     size_t vertices = adj.size();
 
     std::vector<bool> visited(vertices, false);
-    explore(adj, start, &visited);
+    dfs(adj, start, &visited);
 }
 }  // namespace graph
 
 /** Main function */
 int main() {
-    size_t vertices = 0, edges = 0;
-    std::cout << "Enter the Vertices : ";
-    std::cin >> vertices;
-    std::cout << "Enter the Edges : ";
-    std::cin >> edges;
-
+    size_t vertices = 8, edges = 9;
+    // std::cout << "Enter the Vertices : ";
+    // std::cin >> vertices;
+    // std::cout << "Enter the Edges : ";
+    // std::cin >> edges;
     /// creating graph
     std::vector<std::vector<size_t>> adj(vertices, std::vector<size_t>());
 
     /// taking input for edges
-    std::cout << "Enter the vertices which have edges between them : "
-              << std::endl;
-    while (edges--) {
-        size_t u = 0, v = 0;
-        std::cin >> u >> v;
-        graph::addEdge(&adj, u, v);
-    }
+    // std::cout << "Enter the vertices which have edges between them : "
+    //           << std::endl;
+    // while (edges--) {
+    //     size_t u = 0, v = 0;
+    //     std::cin >> u >> v;
+    //     graph::addEdge(&adj, u, v);
+    // }
+    // 1-indexed vertex names
+    graph::addEdge(&adj, 1, 2);
+    graph::addEdge(&adj, 1, 3);
+    graph::addEdge(&adj, 2, 4);
+    graph::addEdge(&adj, 2, 5);
+    graph::addEdge(&adj, 3, 6);
+    graph::addEdge(&adj, 3, 7);
+    graph::addEdge(&adj, 4, 5);
+    graph::addEdge(&adj, 4, 8);
 
     /// running depth first search over graph
     graph::depth_first_search(adj, 2);

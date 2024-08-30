@@ -48,7 +48,6 @@ namespace graph {
 void addEdge(std::vector<std::vector<std::pair<int, int>>> *adj, int u, int v,
              int w) {
     (*adj)[u - 1].push_back(std::make_pair(v - 1, w));
-    // (*adj)[v - 1].push_back(std::make_pair(u - 1, w));
 }
 
 /**
@@ -87,7 +86,7 @@ int dijkstra(std::vector<std::vector<std::pair<int, int>>> *adj, int s, int t) {
         /// second element of pair denotes the node / vertex
         int currentNode = pq.top().second;
 
-        /// first element of pair denotes the distance
+        /// first element of pair denotes the distance (the compared value)
         int currentDist = pq.top().first;
 
         pq.pop();
